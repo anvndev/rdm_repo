@@ -42,7 +42,7 @@ IntelliJ IDEA 2018
 Ok let's start to create the project, Dropwizard provide us a maven archetype that we can use from its web site, here a example of this command:
 mvn archetype:generate -DarchetypeGroupId=io.dropwizard.archetypes -DarchetypeArtifactId=java-simple -DarchetypeVersion=1.3.5 -DgroupId=com.demo -DartifactId=dropwizard-mongodb-ms -Dversion=1.0.0-SNAPSHOT -Dname=DropwizardMongoDBMicroservice
 Open a terminal and paste the before the command, make sure you have installed and configurated maven and java.
-
+`````````````````
 The final structure looks like this:
 dropwizard-mongodb-ms/
 ├── README.md
@@ -76,7 +76,10 @@ dropwizard-mongodb-ms/
         │           └── resources
         └── resources
             └── fixtures
+            
+````````````````
 Once the project was created, add the dependencies in the pom.xml file:
+```````````````
 . . .
 <properties>
         <dropwizard.version>1.3.5</dropwizard.version>
@@ -117,6 +120,8 @@ Once the project was created, add the dependencies in the pom.xml file:
     <scope>test</scope>
 </dependency>
 <!-- Testing -->
+``````````````````````
+```````````````
 . . .
 I added some configurations to the file configuration.yaml, looks like this:
 server:
@@ -157,6 +162,7 @@ swagger:
       name: "Donuts API "
     license:
       name: "Rich Lopez"
+ ``````````````````````````````````````````
 The configuration.yml maps to a class that extends of io.dropwizard.Configuration and looks like this:
 package com.demo;
 
