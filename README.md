@@ -2,15 +2,10 @@
 Save from Anvndev.com
 
 ###### Building microservices with Dropwizard, MongoDB & Docker
-#
-java
-#
-programming
-#
-mongodb
-#
-tutorial
-Dropwizard making magic. 😎
+
+# tutorial
+----------------
+# Dropwizard making magic. 😎
 In this tutorial I will create a microservice using Dropwizard, this framework provides all kind of libraries to build a web application. Some of the libraries that include are:
 
 Jetty Server: this is an open-source web server, lightweight and easy to embed in any application.
